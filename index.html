@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#143b3e"><meta name="apple-mobile-web-app-capable" content="yes">
+<title>Справочник ЧПУ</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-180.png"><link rel="stylesheet" href="app.css">
+<script src="app.js" defer></script></head>
+<body><header><div class="bar"><img src="icon-192.png" alt="" width="40" height="40"><strong>Справочник ЧПУ</strong><button id="install" hidden>Установить</button></div></header>
+<main><h1>Поиск по справочнику</h1><form role="search" id="search"><label for="query">Код аварии, G-команда или текст</label><div class="searchbox"><span aria-hidden="true">⌕</span><input id="query" type="search" placeholder="PS0010, 12080, G17…" autocomplete="off" spellcheck="false"></div>
+<div class="filters"><label>Раздел<select id="section"><option value="">Все разделы</option><option value="fanuc">Аварии FANUC</option><option value="siemens">Аварии SINUMERIK</option><option value="gcodes">G-команды SINUMERIK</option></select></label><label>Стойка<select id="series"><option>Все стойки</option></select></label><label id="prefixBox" hidden>Префикс<select id="prefix"></select></label></div></form>
+<p class="status" id="network" role="status"></p>
+<div class="listhead"><h2 id="listTitle">Каталоги</h2><span id="count" role="status"></span></div>
+<p class="meta">В каталоге есть русские пояснения и указатели на страницы заводских руководств. Охват зависит от серии и редакции документа.</p><div id="results" aria-busy="true">Загрузка справочника…</div><button id="more" hidden>Показать ещё</button>
+<details class="instructions"><summary>Как пользоваться без интернета</summary><p>Открой справочник с интернетом и дождись сообщения «Доступен без интернета». В Chrome на Android выбери в меню «Установить приложение» или «Добавить на главный экран». На iPhone открой страницу в Safari и выбери «Поделиться» → «На экран Домой».</p><p>Поиск и русские пояснения сохраняются на телефоне. Для записей с пометкой «Указатель» доступна ссылка на страницу заводского руководства. Для просмотра этой страницы без сети заранее сохрани PDF на телефон.</p></details>
+</main></body></html>

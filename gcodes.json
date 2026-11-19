@@ -1,0 +1,1227 @@
+[
+  {
+    "code": "G0",
+    "title": "Быстрый ход к заданной точке.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G1",
+    "title": "Перемещение по прямой с заданной подачей.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G2",
+    "title": "Дуга по часовой стрелке в выбранной рабочей плоскости.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G3",
+    "title": "Дуга против часовой стрелки в выбранной рабочей плоскости.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G4",
+    "title": "Выдержка перед переходом к следующему кадру.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G5",
+    "title": "Шлифование косым врезанием.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G7",
+    "title": "Компенсирующее перемещение при шлифовании косым врезанием.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G9",
+    "title": "Точный останов только в конце текущего кадра.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G17",
+    "title": "Рабочая плоскость XY.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G18",
+    "title": "Рабочая плоскость ZX.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G19",
+    "title": "Рабочая плоскость YZ.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G25",
+    "title": "Нижняя граница рабочей зоны по указанной оси. С адресом S задаёт нижний предел оборотов шпинделя.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G26",
+    "title": "Верхняя граница рабочей зоны по указанной оси. С адресом S задаёт верхний предел оборотов шпинделя.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G33",
+    "title": "Нарезание резьбы с постоянным шагом.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G34",
+    "title": "Нарезание резьбы с линейно возрастающим шагом.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G35",
+    "title": "Нарезание резьбы с линейно убывающим шагом.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G40",
+    "title": "Отключение коррекции радиуса инструмента.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "430"
+  },
+  {
+    "code": "G41",
+    "title": "Коррекция радиуса инструмента слева от контура по направлению обхода.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G42",
+    "title": "Коррекция радиуса инструмента справа от контура по направлению обхода.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G53",
+    "title": "На один кадр подавляет программируемые и устанавливаемые смещения нуля.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "355"
+  },
+  {
+    "code": "G54",
+    "title": "Выбор устанавливаемого смещения нуля детали № 1.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G55",
+    "title": "Выбор устанавливаемого смещения нуля детали № 2.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G56",
+    "title": "Выбор устанавливаемого смещения нуля детали № 3.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G57",
+    "title": "Выбор устанавливаемого смещения нуля детали № 4.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G58",
+    "title": "Выбор устанавливаемого смещения нуля детали № 5.",
+    "series": "828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "149"
+  },
+  {
+    "code": "G58",
+    "title": "Задаёт абсолютное программируемое смещение нуля (грубая составляющая).",
+    "series": "840D sl · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G59",
+    "title": "Выбор устанавливаемого смещения нуля детали № 6.",
+    "series": "828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "149"
+  },
+  {
+    "code": "G59",
+    "title": "Добавляет программируемое смещение нуля (точная составляющая).",
+    "series": "840D sl · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G60",
+    "title": "Точный останов в конце каждого кадра перемещения до смены режима.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G62",
+    "title": "Замедление во внутренних углах с активной коррекцией G41 или G42.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G63",
+    "title": "Нарезание резьбы метчиком в компенсирующем патроне.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G64",
+    "title": "Непрерывное движение по контуру через границы кадров.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G70",
+    "title": "Дюймовый ввод геометрических размеров.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G71",
+    "title": "Метрический ввод геометрических размеров.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G74",
+    "title": "Поиск референтной точки.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G75",
+    "title": "Выход в заданную фиксированную точку станка.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G90",
+    "title": "Абсолютные координаты относительно действующей системы отсчёта.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G91",
+    "title": "Приращения координат относительно предыдущей точки.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G93",
+    "title": "Подача F обратно пропорциональна времени выполнения движения.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G94",
+    "title": "Подача за минуту для линейной или поворотной оси.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G95",
+    "title": "Подача на оборот шпинделя.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G96",
+    "title": "Постоянная скорость резания, подача на оборот.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G97",
+    "title": "Постоянные обороты шпинделя, подача на оборот.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G110",
+    "title": "Задаёт полюс относительно последней запрограммированной конечной точки.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G111",
+    "title": "Задаёт полюс от нуля действующей системы координат детали.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G112",
+    "title": "Задаёт новый полюс относительно предыдущего полюса.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G140",
+    "title": "Сторону плавного подвода определяет G41 или G42.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G141",
+    "title": "Плавный подвод слева от контура.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G142",
+    "title": "Плавный подвод справа от контура.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "431"
+  },
+  {
+    "code": "G143",
+    "title": "Направление плавного подвода зависит от касательной к контуру.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G147",
+    "title": "Плавный вход по прямой.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G148",
+    "title": "Плавный выход по прямой.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G153",
+    "title": "На один кадр подавляет смещения как G53, а также базовое преобразование.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "355"
+  },
+  {
+    "code": "G247",
+    "title": "Плавный вход по четверти окружности.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G248",
+    "title": "Плавный выход по четверти окружности.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G290",
+    "title": "Переход на язык программирования SINUMERIK.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G291",
+    "title": "Переход на настроенный ISO-диалект.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G331",
+    "title": "Рабочий ход при жёстком резьбонарезании с синхронизацией подачи и шпинделя.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G332",
+    "title": "Обратный ход метчика при жёстком резьбонарезании.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G340",
+    "title": "При плавном подводе движение по глубине совмещено с движением в плоскости.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G341",
+    "title": "При плавном подводе сначала достигается глубина, затем выполняется движение в плоскости.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G347",
+    "title": "Плавный вход по полуокружности.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G348",
+    "title": "Плавный выход по полуокружности.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G450",
+    "title": "При коррекции радиуса соединяет участки на наружном углу переходной дугой.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G451",
+    "title": "При коррекции радиуса строит пересечение эквидистант на наружном углу.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G500",
+    "title": "Выбирает базовое преобразование. При нулевом содержимом G500 снимает устанавливаемое смещение нуля.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G505",
+    "title": "Выбор смещения нуля детали № 5, если оно настроено для канала.",
+    "series": "840D sl · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "149"
+  },
+  {
+    "code": "G506",
+    "title": "Выбор смещения нуля детали № 6, если оно настроено для канала.",
+    "series": "840D sl · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "149"
+  },
+  {
+    "code": "G507",
+    "title": "Выбор смещения нуля детали № 7, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G508",
+    "title": "Выбор смещения нуля детали № 8, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G509",
+    "title": "Выбор смещения нуля детали № 9, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G510",
+    "title": "Выбор смещения нуля детали № 10, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G511",
+    "title": "Выбор смещения нуля детали № 11, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G512",
+    "title": "Выбор смещения нуля детали № 12, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G513",
+    "title": "Выбор смещения нуля детали № 13, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G514",
+    "title": "Выбор смещения нуля детали № 14, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G515",
+    "title": "Выбор смещения нуля детали № 15, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G516",
+    "title": "Выбор смещения нуля детали № 16, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G517",
+    "title": "Выбор смещения нуля детали № 17, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G518",
+    "title": "Выбор смещения нуля детали № 18, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G519",
+    "title": "Выбор смещения нуля детали № 19, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G520",
+    "title": "Выбор смещения нуля детали № 20, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G521",
+    "title": "Выбор смещения нуля детали № 21, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G522",
+    "title": "Выбор смещения нуля детали № 22, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G523",
+    "title": "Выбор смещения нуля детали № 23, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G524",
+    "title": "Выбор смещения нуля детали № 24, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G525",
+    "title": "Выбор смещения нуля детали № 25, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G526",
+    "title": "Выбор смещения нуля детали № 26, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G527",
+    "title": "Выбор смещения нуля детали № 27, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G528",
+    "title": "Выбор смещения нуля детали № 28, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G529",
+    "title": "Выбор смещения нуля детали № 29, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G530",
+    "title": "Выбор смещения нуля детали № 30, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G531",
+    "title": "Выбор смещения нуля детали № 31, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G532",
+    "title": "Выбор смещения нуля детали № 32, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G533",
+    "title": "Выбор смещения нуля детали № 33, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G534",
+    "title": "Выбор смещения нуля детали № 34, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G535",
+    "title": "Выбор смещения нуля детали № 35, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G536",
+    "title": "Выбор смещения нуля детали № 36, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G537",
+    "title": "Выбор смещения нуля детали № 37, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G538",
+    "title": "Выбор смещения нуля детали № 38, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G539",
+    "title": "Выбор смещения нуля детали № 39, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G540",
+    "title": "Выбор смещения нуля детали № 40, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G541",
+    "title": "Выбор смещения нуля детали № 41, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G542",
+    "title": "Выбор смещения нуля детали № 42, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G543",
+    "title": "Выбор смещения нуля детали № 43, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G544",
+    "title": "Выбор смещения нуля детали № 44, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G545",
+    "title": "Выбор смещения нуля детали № 45, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G546",
+    "title": "Выбор смещения нуля детали № 46, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G547",
+    "title": "Выбор смещения нуля детали № 47, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G548",
+    "title": "Выбор смещения нуля детали № 48, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G549",
+    "title": "Выбор смещения нуля детали № 49, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G550",
+    "title": "Выбор смещения нуля детали № 50, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G551",
+    "title": "Выбор смещения нуля детали № 51, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G552",
+    "title": "Выбор смещения нуля детали № 52, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G553",
+    "title": "Выбор смещения нуля детали № 53, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G554",
+    "title": "Выбор смещения нуля детали № 54, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G555",
+    "title": "Выбор смещения нуля детали № 55, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G556",
+    "title": "Выбор смещения нуля детали № 56, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G557",
+    "title": "Выбор смещения нуля детали № 57, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G558",
+    "title": "Выбор смещения нуля детали № 58, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G559",
+    "title": "Выбор смещения нуля детали № 59, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G560",
+    "title": "Выбор смещения нуля детали № 60, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G561",
+    "title": "Выбор смещения нуля детали № 61, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G562",
+    "title": "Выбор смещения нуля детали № 62, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G563",
+    "title": "Выбор смещения нуля детали № 63, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G564",
+    "title": "Выбор смещения нуля детали № 64, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G565",
+    "title": "Выбор смещения нуля детали № 65, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G566",
+    "title": "Выбор смещения нуля детали № 66, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G567",
+    "title": "Выбор смещения нуля детали № 67, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G568",
+    "title": "Выбор смещения нуля детали № 68, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G569",
+    "title": "Выбор смещения нуля детали № 69, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G570",
+    "title": "Выбор смещения нуля детали № 70, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G571",
+    "title": "Выбор смещения нуля детали № 71, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G572",
+    "title": "Выбор смещения нуля детали № 72, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G573",
+    "title": "Выбор смещения нуля детали № 73, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G574",
+    "title": "Выбор смещения нуля детали № 74, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G575",
+    "title": "Выбор смещения нуля детали № 75, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G576",
+    "title": "Выбор смещения нуля детали № 76, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G577",
+    "title": "Выбор смещения нуля детали № 77, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G578",
+    "title": "Выбор смещения нуля детали № 78, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G579",
+    "title": "Выбор смещения нуля детали № 79, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G580",
+    "title": "Выбор смещения нуля детали № 80, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G581",
+    "title": "Выбор смещения нуля детали № 81, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G582",
+    "title": "Выбор смещения нуля детали № 82, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G583",
+    "title": "Выбор смещения нуля детали № 83, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G584",
+    "title": "Выбор смещения нуля детали № 84, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G585",
+    "title": "Выбор смещения нуля детали № 85, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G586",
+    "title": "Выбор смещения нуля детали № 86, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G587",
+    "title": "Выбор смещения нуля детали № 87, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G588",
+    "title": "Выбор смещения нуля детали № 88, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G589",
+    "title": "Выбор смещения нуля детали № 89, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G590",
+    "title": "Выбор смещения нуля детали № 90, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G591",
+    "title": "Выбор смещения нуля детали № 91, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G592",
+    "title": "Выбор смещения нуля детали № 92, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G593",
+    "title": "Выбор смещения нуля детали № 93, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G594",
+    "title": "Выбор смещения нуля детали № 94, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G595",
+    "title": "Выбор смещения нуля детали № 95, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G596",
+    "title": "Выбор смещения нуля детали № 96, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G597",
+    "title": "Выбор смещения нуля детали № 97, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G598",
+    "title": "Выбор смещения нуля детали № 98, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G599",
+    "title": "Выбор смещения нуля детали № 99, если оно настроено для канала.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "147"
+  },
+  {
+    "code": "G601",
+    "title": "Переход к следующему кадру после достижения узкого окна точного останова.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G602",
+    "title": "Переход к следующему кадру после достижения широкого окна точного останова.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G603",
+    "title": "Переход к следующему кадру по окончании интерполяции текущего кадра.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G621",
+    "title": "Замедление во всех углах контура.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G641",
+    "title": "Сглаживание стыков кадров с заданным расстоянием скругления.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G642",
+    "title": "Непрерывный ход со сглаживанием в пределах заданных допусков.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G643",
+    "title": "Сглаживание в заданном допуске внутри кадра.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G644",
+    "title": "Сглаживание с приоритетом динамических возможностей осей.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "432"
+  },
+  {
+    "code": "G645",
+    "title": "Сглаживание переходов в заданном допуске, в том числе при касательном сопряжении кадров.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "433"
+  },
+  {
+    "code": "G700",
+    "title": "Дюймовые единицы для длин и подачи.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "433"
+  },
+  {
+    "code": "G710",
+    "title": "Метрические единицы для длин и подачи.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "433"
+  },
+  {
+    "code": "G931",
+    "title": "Задание подачи временем перемещения.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "433"
+  },
+  {
+    "code": "G961",
+    "title": "Постоянная скорость резания с подачей за минуту.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "433"
+  },
+  {
+    "code": "G971",
+    "title": "Постоянные обороты шпинделя с подачей за минуту.",
+    "series": "840D sl / 828D · CNC 4.8 SP1 · язык Siemens",
+    "source": "https://cache.industry.siemens.com/dl/files/380/109748380/att_923031/v1/840Dsl_828D_fundamentals_progr_man_0517_en-US.pdf",
+    "page": "433"
+  }
+]

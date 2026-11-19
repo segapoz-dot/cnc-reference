@@ -1,0 +1,108 @@
+'use strict';
+const $ = id => document.getElementById(id);
+const labels = {fanuc:'Аварии FANUC', siemens:'Аварии SINUMERIK', gcodes:'G-команды SINUMERIK'};
+const symbols = {fanuc:'F', siemens:'S', gcodes:'G'};
+const catalogs = {};
+let limit = 30;
+function element(tag, text, cls) {
+  const node = document.createElement(tag);
+  if (text !== undefined) node.textContent = text;
+  if (cls) node.className = cls;
+  return node;
+}
+function normal(text) { return text.trim().toUpperCase().replaceAll('Ё','Е'); }
+function codeKey(text) { return normal(text).replace(/[\s-]+/g,'').replace(/^([A-Z]*)0+(?=\d)/,'$1'); }
+function populate(select, values, label) {
+  select.replaceChildren(new Option(label,''));
+  for (const val of [...new Set(values)].sort()) select.add(new Option(val,val));
+}
+function updateFilters() {
+  const key = $('section').value;
+  const rows = key ? catalogs[key] : Object.values(catalogs).flat();
+  populate($('series'),rows.map(r=>r.series),'Все стойки');
+  $('prefixBox').hidden = key !== 'fanuc';
+  populate($('prefix'),key === 'fanuc' ? catalogs.fanuc.flatMap(r=>r.keys.map(k=>k.match(/^[A-Z]+/)?.[0])).filter(Boolean) : [],'Все');
+  limit=30; render();
+}
+function showCatalogs() {
+  $('listTitle').textContent='Каталоги';
+  $('count').textContent='';
+  for (const [key,label] of Object.entries(labels)) {
+    const button=element('button',undefined,'catalog');
+    const name=element('span');
+    const n=new Set(catalogs[key].map(r=>r.code)).size;
+    name.append(element('strong',label),element('small',n.toLocaleString('ru')+' кодов','meta'));
+    button.append(element('span',symbols[key],'symbol'),name,element('span','›','chevron'));
+    button.onclick=()=>{ $('section').value=key; updateFilters(); };
+    $('results').append(button);
+  }
+}
+function showCard(group) {
+  const row=group[0], card=element('article',undefined,'card');
+  card.append(element('h3',row.code),element('div',labels[row.category],'meta'),
+    element('p',row.title || 'Указатель. Расшифровка на указанной странице руководства.'));
+  const refs=element('div',undefined,'refs');
+  for(const item of group) {
+    const a=element('a',item.series+(item.page ? (item.source.includes('studylib.net') ? ' · стр. руководства ' : ' · стр. PDF ')+item.page : ' · руководство')+' ↗');
+    const link=new URL(item.source);
+    if(link.protocol!=='https:' && link.protocol!=='http:')continue;
+    if(item.page && /\.pdf$/i.test(link.pathname))link.hash='page='+item.page;
+    a.href=link.href; a.target='_blank'; a.rel='noopener noreferrer'; refs.append(a);
+  }
+  card.append(refs); $('results').append(card);
+}
+function render() {
+  if(!Object.keys(labels).every(k=>catalogs[k])) return;
+  const q=normal($('query').value), k=codeKey(q);
+  const section=$('section').value, series=$('series').value, prefix=$('prefix').value;
+  $('results').replaceChildren(); $('more').hidden=true;
+  if (!q && !section && !series) { showCatalogs(); return; }
+  const groups = new Map();
+  const numeric=/^\d+$/.test(k);
+  const isCode=/^[A-Z]*\d+(?:\.\d+)?$/.test(k);
+  for(const [category,rows] of Object.entries(catalogs)) {
+    if(section && section!==category) continue;
+    for(const row of rows) {
+      if(series && series!==row.series) continue;
+      const keys=prefix ? row.keys.filter(s=>(s.match(/^[A-Z]+/)||[''])[0]===prefix) : row.keys;
+      if(!keys.length) continue;
+      const exact=keys.some(s=>s===k || (numeric && s.replace(/^[A-Z]+/,'')===k));
+      if(q && !exact && (isCode || (!keys.some(s=>s.startsWith(k)) && !row.words.includes(q)))) continue;
+      const groupKey=[category,row.code,row.title].join('|');
+      if(!groups.has(groupKey)) groups.set(groupKey,[]);
+      groups.get(groupKey).push(row);
+    }
+  }
+  $('listTitle').textContent=q?'Результаты поиска':(labels[section]||'Результаты');
+  $('count').textContent=groups.size.toLocaleString('ru');
+  if(!groups.size) $('results').textContent='Совпадений в загруженных каталогах нет. Проверь код или выбери все стойки.';
+  for(const group of [...groups.values()].slice(0,limit)) showCard(group);
+  $('more').hidden=limit>=groups.size;
+}
+async function load() {
+  try {
+    await Promise.all(Object.keys(labels).map(async category=>{
+      const response=await fetch(category+'.json');
+      if(!response.ok)throw Error(response.status);
+      catalogs[category]=(await response.json()).map(row=>({...row,category,
+        keys:[row.code,...(row.aliases||[])].map(codeKey),words:normal(row.title||'')}));
+    }));
+    updateFilters();
+  } catch { $('results').textContent='Не удалось загрузить каталог. Открой страницу снова при доступной сети.'; }
+  $('results').setAttribute('aria-busy','false');
+}
+$('query').oninput=()=>{limit=30;render();};
+$('search').onsubmit=e=>{e.preventDefault();$('query').blur();render();};
+$('section').onchange=updateFilters;
+$('series').onchange=$('prefix').onchange=()=>{limit=30;render();};
+$('more').onclick=()=>{limit+=30;render();};
+let installPrompt;
+window.addEventListener('beforeinstallprompt', e=>{e.preventDefault();installPrompt=e;$('install').hidden=false;});
+$('install').onclick=async()=>{if(installPrompt)await installPrompt.prompt();installPrompt=null;$('install').hidden=true;};
+if ('serviceWorker' in navigator) {
+  $('network').textContent='Сохранение на телефон…';
+  navigator.serviceWorker.register('./sw.js').then(()=>navigator.serviceWorker.ready)
+    .then(()=>{$('network').textContent='● Доступен без интернета';})
+    .catch(()=>{$('network').textContent='Офлайн-копия пока недоступна';});
+}
+load();
