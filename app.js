@@ -2,6 +2,7 @@
 const $ = id => document.getElementById(id);
 const labels = {fanuc:'Аварии FANUC', siemens:'Аварии SINUMERIK', gcodes:'G-команды SINUMERIK'};
 const symbols = {fanuc:'F', siemens:'S', gcodes:'G'};
+const fanucPrefixes = {PS:'Программа и работа',BG:'Фоновое редактирование',SR:'Связь',SV:'Сервопривод',OT:'Выход за пределы',IO:'Файлы и ввод-вывод',SW:'Запись параметров',PW:'Требуется выключение питания',SP:'Шпиндель',OH:'Перегрев',DS:'Диагностика'};
 const catalogs = {};
 let limit = 30;
 function element(tag, text, cls) {
@@ -37,10 +38,16 @@ function showCatalogs() {
     $('results').append(button);
   }
 }
-function showCard(group) {
+function showCard(group, requestedPrefix) {
   const row=group[0], card=element('article',undefined,'card');
-  card.append(element('h3',row.code),element('div',labels[row.category],'meta'),
-    element('p',row.title || 'Указатель. Расшифровка на указанной странице руководства.'));
+  const selectedCode=requestedPrefix && row.category==='fanuc'
+    ? [row.code,...(row.aliases||[])].find(code=>code.startsWith(requestedPrefix)) : null;
+  const code=selectedCode || row.code;
+  const kind=selectedCode ? fanucPrefixes[requestedPrefix] : labels[row.category];
+  card.append(element('h3',code),element('div',kind,'meta'));
+  if(row.title)card.append(element('p',row.title));
+  if(row.message_en)card.append(element('p','В руководстве: '+row.message_en,'original-message'));
+  if(!row.title && !row.message_en)card.append(element('p','Для этого кода в каталоге пока нет расшифровки. Сверь сообщение на стойке с руководством.'));
   const refs=element('div',undefined,'refs');
   for(const item of group) {
     const a=element('a',item.series+(item.page ? (item.source.includes('studylib.net') ? ' · стр. руководства ' : ' · стр. PDF ')+item.page : ' · руководство')+' ↗');
@@ -55,6 +62,7 @@ function render() {
   if(!Object.keys(labels).every(k=>catalogs[k])) return;
   const q=normal($('query').value), k=codeKey(q);
   const section=$('section').value, series=$('series').value, prefix=$('prefix').value;
+  const requestedPrefix=prefix || q.match(/^[A-Z]+/)?.[0] || '';
   $('results').replaceChildren(); $('more').hidden=true;
   if (!q && !section && !series) { showCatalogs(); return; }
   const groups = new Map();
@@ -68,7 +76,7 @@ function render() {
       if(!keys.length) continue;
       const exact=keys.some(s=>s===k || (numeric && s.replace(/^[A-Z]+/,'')===k));
       if(q && !exact && (isCode || (!keys.some(s=>s.startsWith(k)) && !row.words.includes(q)))) continue;
-      const groupKey=[category,row.code,row.title].join('|');
+      const groupKey=[category,row.code,row.title,row.message_en].join('|');
       if(!groups.has(groupKey)) groups.set(groupKey,[]);
       groups.get(groupKey).push(row);
     }
@@ -76,7 +84,7 @@ function render() {
   $('listTitle').textContent=q?'Результаты поиска':(labels[section]||'Результаты');
   $('count').textContent=groups.size.toLocaleString('ru');
   if(!groups.size) $('results').textContent='Совпадений в загруженных каталогах нет. Проверь код или выбери все стойки.';
-  for(const group of [...groups.values()].slice(0,limit)) showCard(group);
+  for(const group of [...groups.values()].slice(0,limit)) showCard(group,requestedPrefix);
   $('more').hidden=limit>=groups.size;
 }
 async function load() {
@@ -85,7 +93,7 @@ async function load() {
       const response=await fetch(category+'.json');
       if(!response.ok)throw Error(response.status);
       catalogs[category]=(await response.json()).map(row=>({...row,category,
-        keys:[row.code,...(row.aliases||[])].map(codeKey),words:normal(row.title||'')}));
+        keys:[row.code,...(row.aliases||[])].map(codeKey),words:normal([row.title,row.message_en].filter(Boolean).join(' '))}));
     }));
     updateFilters();
   } catch { $('results').textContent='Не удалось загрузить каталог. Открой страницу снова при доступной сети.'; }
