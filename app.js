@@ -2,7 +2,7 @@
 const $ = id => document.getElementById(id);
 const labels = {fanuc:'Аварии FANUC', siemens:'Аварии SINUMERIK', gcodes:'G-команды SINUMERIK'};
 const symbols = {fanuc:'F', siemens:'S', gcodes:'G'};
-const fanucPrefixes = {PS:'Программа и работа',BG:'Фоновое редактирование',SR:'Связь',SV:'Сервопривод',OT:'Выход за пределы',IO:'Файлы и ввод-вывод',SW:'Запись параметров',PW:'Требуется выключение питания',SP:'Шпиндель',OH:'Перегрев',DS:'Диагностика'};
+const fanucPrefixes = {PS:'Программа и работа',BG:'Фоновое редактирование',SR:'Связь',SV:'Сервопривод',OT:'Выход за пределы',IO:'Файлы и ввод-вывод',SW:'Запись параметров',PW:'Требуется выключение питания',SP:'Шпиндель',OH:'Перегрев',DS:'Прочие аварии',IE:'Предотвращение сбоев'};
 const catalogs = {};
 let limit = 30;
 function element(tag, text, cls) {
@@ -46,7 +46,11 @@ function showCard(group, requestedPrefix) {
   const kind=selectedCode ? fanucPrefixes[requestedPrefix] : labels[row.category];
   card.append(element('h3',code),element('div',kind,'meta'));
   if(row.title)card.append(element('p',row.title));
-  if(row.message_en)card.append(element('p','В руководстве: '+row.message_en,'original-message'));
+  if(row.message_en) {
+    const original=element('details',undefined,'original-message');
+    original.append(element('summary','Оригинал из руководства'),element('p',row.message_en));
+    card.append(original);
+  }
   if(!row.title && !row.message_en)card.append(element('p','Для этого кода в каталоге пока нет расшифровки. Сверь сообщение на стойке с руководством.'));
   const refs=element('div',undefined,'refs');
   for(const item of group) {
