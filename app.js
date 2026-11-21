@@ -5,6 +5,7 @@ const symbols = {fanuc:'F', siemens:'S', gcodes:'G'};
 const fanucPrefixes = {PS:'Программа и работа',BG:'Фоновое редактирование',SR:'Связь',SV:'Сервопривод',OT:'Выход за пределы',IO:'Файлы и ввод-вывод',SW:'Запись параметров',PW:'Требуется выключение питания',SP:'Шпиндель',OH:'Перегрев',DS:'Прочие аварии',IE:'Предотвращение сбоев'};
 const catalogs = {};
 let limit = 30;
+const pages={siemens:['SINUMERIK','Ошибки стоек Siemens. Введи номер с экрана станка.','Например, 12080'],fanuc:['FANUC','Ошибки ЧПУ FANUC. Введи префикс и номер, например PS0010 или SV0401.','Например, PS0010'],drives:['Приводы','Сначала определи тип блока по шильдику. Коды на индикаторе привода зависят от его серии.','Номер блока A06B-…'],gcodes:['G-команды','Команды программирования SINUMERIK. Введи G-код или слово.','Например, G17']};
 function element(tag, text, cls) {
   const node = document.createElement(tag);
   if (text !== undefined) node.textContent = text;
@@ -19,10 +20,15 @@ function populate(select, values, label) {
 }
 function updateFilters() {
   const key = $('section').value;
-  const rows = key ? catalogs[key] : Object.values(catalogs).flat();
+  const rows = catalogs[key] || [];
   populate($('series'),rows.map(r=>r.series),'Все стойки');
   $('prefixBox').hidden = key !== 'fanuc';
   populate($('prefix'),key === 'fanuc' ? catalogs.fanuc.flatMap(r=>r.keys.map(k=>k.match(/^[A-Z]+/)?.[0])).filter(Boolean) : [],'Все');
+  document.body.dataset.section=key;
+  $('pageTitle').textContent=pages[key][0]; $('pageIntro').textContent=pages[key][1];
+  $('query').placeholder=pages[key][2]; $('queryLabel').textContent=key==='gcodes'?'G-код или текст':key==='drives'?'Модель привода':'Номер аварии или текст';
+  document.querySelectorAll('.tabs button').forEach(button=>{button.setAttribute('aria-current',button.dataset.section===key?'page':'false');});
+  $('advanced').hidden=key==='drives'; $('search').hidden=key==='drives';
   limit=30; render();
 }
 function showCatalogs() {
@@ -68,7 +74,14 @@ function render() {
   const section=$('section').value, series=$('series').value, prefix=$('prefix').value;
   const requestedPrefix=prefix || q.match(/^[A-Z]+/)?.[0] || '';
   $('results').replaceChildren(); $('more').hidden=true;
-  if (!q && !section && !series) { showCatalogs(); return; }
+  if(section==='drives') {
+    $('listTitle').textContent='Типы блоков'; $('count').textContent='';
+    for(const [code,name,detail] of [['PSM','Блок питания','Питает приводную систему. Код на его индикаторе сверяют с руководством серии.'],['SVM','Привод осей','Управляет серводвигателями осей. Уточни серию и номер A06B-…'],['SPM','Привод шпинделя','Управляет шпинделем. Таблица кодов отличается от SVM и PSM.']]) {
+      const card=element('article',undefined,'card');card.append(element('h3',code),element('p',name),element('p',detail,'meta'));$('results').append(card);
+    }
+    $('results').append(element('p','Для точной расшифровки кода привода нужны тип блока, серия и номер A06B-… с шильдика.','meta'));return;
+  }
+  if(!q) { $('listTitle').textContent='Поиск'; $('count').textContent=''; $('results').append(element('p','Введи код с экрана станка. Результаты появятся здесь.','empty-state')); return; }
   const groups = new Map();
   const numeric=/^\d+$/.test(k);
   const isCode=/^[A-Z]*\d+(?:\.\d+)?$/.test(k);
@@ -106,6 +119,7 @@ async function load() {
 $('query').oninput=()=>{limit=30;render();};
 $('search').onsubmit=e=>{e.preventDefault();$('query').blur();render();};
 $('section').onchange=updateFilters;
+document.querySelectorAll('.tabs button').forEach(button=>button.onclick=()=>{$('section').value=button.dataset.section;$('query').value='';updateFilters();});
 $('series').onchange=$('prefix').onchange=()=>{limit=30;render();};
 $('more').onclick=()=>{limit+=30;render();};
 let installPrompt;
